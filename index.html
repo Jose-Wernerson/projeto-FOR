@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input placeholder="Digite o nome do contato">
+    <p></p>
+    <button onclick="search()">Procurar Contato</button>
+
+</body>
+<script>
+
+    let p = document.querySelector("p")
+    let input = document.querySelector("input")
+
+    const contacts = [
+        { name: "Antônio Silva", number: "(21) 96935-2844" },
+        { name: "Maria Oliveira", number: "(21) 96935-2814" },
+        { name: "João Santos", number: "(21) 96935-2824" },
+        { name: "Ana Pereira", number: "(21) 96935-2834" },
+        { name: "Carlos Rodrigues", number: "(21) 96935-2854" },
+        { name: "Laura Souza", number: "(21) 96935-2864" },
+        { name: "Rafael Almeida", number: "(21) 96935-2874" },
+        { name: "Isabela Fernandes", number: "(21) 96935-2884" },
+        { name: "Gustavo Gomes", number: "(21) 96935-2894" },
+        { name: "Luiza Costa", number: "(21) 96935-2104" },
+        { name: "Pedro Lima", number: "(21) 96935-2124" },
+        { name: "Sofia Carvalho", number: "(21) 96935-2134" },
+        { name: "Gabriel Martins", number: "(21) 96935-2144" },
+        { name: "Beatriz Nunes", number: "(21) 96935-2154" },
+        { name: "Arthur Santos", number: "(21) 96935-2164" },
+        { name: "Alice Pereira", number: "(21) 96935-2174" },
+        { name: "Henrique Rodrigues", number: "(21) 96935-2184" },
+        { name: "Júlia Silva", number: "(21) 96935-2194" },
+        { name: "Miguel Almeida", number: "(21) 96935-2204" },
+        { name: "Sophia Fernandes", number: "(21) 96935-2214" },
+        { name: "Maria Pereira", number: "(21) 96935-2224" },
+        { name: "João Souza", number: "(21) 96935-2234" },
+        { name: "Ana Santos", number: "(21) 96935-2244" },
+        { name: "Carlos Oliveira", number: "(21) 96935-2254" },
+        { name: "Laura Rodrigues", number: "(21) 96935-2264" },
+        { name: "Pedro Almeida", number: "(21) 96935-2274" },
+        { name: "Isabela Fernandes", number: "(21) 96935-2284" },
+        { name: "Rafael Costa", number: "(21) 96935-2294" },
+        { name: "Gustavo Lima", number: "(21) 96935-2304" },
+        { name: "Luísa Gomes", number: "(21) 96935-2314" },
+        { name: "Miguel Alves", number: "(21) 96935-2324" },
+        { name: "Beatriz Santos", number: "(21) 96935-2334" },
+        { name: "Heitor Ribeiro", number: "(21) 96935-2344" },
+        { name: "Gabriela Martins", number: "(21) 96935-2354" },
+        { name: "Arthur Pereira", number: "(21) 96935-2364" },
+        { name: "Alice Rodrigues", number: "(21) 96935-2374" },
+        { name: "Davi Souza", number: "(21) 96935-2384" },
+    ]
+
+    function search() {
+
+        for (let i = 0; i < contacts.length; i++) {
+            if (input.value.toLowerCase() === contacts[i].name.toLowerCase()) {
+                p.innerHTML =`contatos Encotrados Nome:${contacts[i].name} tel: ${contacts[i].number}`
+
+                break
+
+            } else {
+                p.innerHTML = "contato nao encontrado, tente novamente "
+            }
+        }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
